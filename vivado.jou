@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr 11 15:19:34 2022
+# Process ID: 23668
+# Current directory: G:/GitHub/d0011e_lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24648 G:\GitHub\d0011e_lab2\lab2.xpr
+# Log file: G:/GitHub/d0011e_lab2/vivado.log
+# Journal file: G:/GitHub/d0011e_lab2\vivado.jou
+# Running On: BruhMaskin, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 34273 MB
+#-----------------------------------------------------------
+start_gui
+open_project G:/GitHub/d0011e_lab2/lab2.xpr
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/danie/Desktop/bcdcheck3.vhd
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck3.vhd
+add_files -norecurse G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck3.vhd
+export_ip_user_files -of_objects  [get_files G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck3.vhd] -no_script -reset -force -quiet
+remove_files  G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck3.vhd
+launch_simulation
+set_property top BCDcheck3 [current_fileset]
+export_ip_user_files -of_objects  [get_files C:/Users/danie/Desktop/bcdcheck3.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/danie/Desktop/bcdcheck3.vhd
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck4.vhd
+launch_simulation
+launch_simulation
+launch_simulation
+source test_bench.tcl
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 192
+relaunch_sim
+relaunch_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/part2a.vhd
+relaunch_sim
+relaunch_sim
+close_sim
+add_files -norecurse G:/GitHub/d0011e_lab2/ci_scripts/part2a.vhd
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property top part2a [current_fileset]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_schematic -format pdf -orientation portrait G:/GitHub/d0011e_lab2/part2a.pdf
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run synth_1 -name synth_1
+write_schematic -format pdf -orientation portrait G:/GitHub/d0011e_lab2/part2aSynthesized.pdf
+write_schematic -format pdf -orientation portrait G:/GitHub/d0011e_lab2/synthesized.pdf
+launch_simulation
+source test_bench.tcl
+close_sim
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/part3a.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/part3b.vhd
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 192
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 216
+relaunch_sim
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 216
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 219
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 219
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 219
+relaunch_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse G:/GitHub/d0011e_lab2/ci_scripts/part3c.vhd
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source test_bench.tcl
+close_sim
+launch_simulation
+source test_bench.tcl
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 230
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 230
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 238
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 239
+relaunch_sim
+relaunch_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {G:/GitHub/d0011e_lab2/ci_scripts/part4PDL.vhd G:/GitHub/d0011e_lab2/ci_scripts/part4.vhd}
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source test_bench.tcl
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 239
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 269
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+relaunch_sim
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 279
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+close_sim
+add_files -norecurse {G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck4.vhd G:/GitHub/d0011e_lab2/ci_scripts/bcdcheck3.vhd}
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property top BCDcheck3 [current_fileset]
+refresh_design
+write_schematic -format pdf -orientation portrait G:/GitHub/d0011e_lab2/bacdcheck3.pdf
+set_property top BCDcheck4 [current_fileset]
+refresh_design
+write_schematic -format pdf -orientation portrait G:/GitHub/d0011e_lab2/bcdcheck4.pdf
+close_design
+launch_simulation
+source test_bench.tcl
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 280
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source test_bench.tcl
+remove_bps -file {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} -line 280
+add_bp {G:/GitHub/d0011e_lab2/vhdl_lab.srcs/sim_1/imports/srcs/test_bench.vhd} 301
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+close_project
